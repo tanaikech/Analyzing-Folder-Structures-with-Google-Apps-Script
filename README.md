@@ -36,7 +36,7 @@ In this case, it is NOT required to enable Drive API at Advanced Google services
 
 **In this script, the folder trees can be obtained from your Drive and the shared drives.**
 
-```
+```javascript
 /**
  * ### Description
  * Get folder tree using DriveApp (Drive service) from own drive and shared drive.
@@ -337,7 +337,7 @@ And, please enable Drive API at Advanced Google services.
 
 **In this script, the folder trees can be obtained from your Drive, the shared drives, and the drive of the service account.**
 
-```
+```javascript
 /**
  * ### Description
  * Get folder tree using Drive API from own drive, shared drive and service account's drive.
@@ -598,7 +598,7 @@ When the function `sample6` is run to the above sample folder, the same result w
 
 This class **GetFolderTreeForDriveAPI** can retrieve the folder tree from the drive of the service account. In the case of `new GetFolderTreeForDriveAPI({ id: folderId })`, the access token is retrieved by `ScriptApp.getOAuthToken()`. If you want to retrieve the folder tree from the drive of the service account, please give the access token retrieved from the service account. The sample script is as follows. The function `getAccessTokenFromServiceAccount_` is from [my post](https://tanaikech.github.io/2018/12/07/retrieving-access-token-for-service-account-using-google-apps-script/).
 
-```
+```javascript
 /**
  * ### Description
  * Get access token from service account.
